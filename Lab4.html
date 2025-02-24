@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>INST377 - Lab 4</title>
+  <!-- connect html and css file -->
+  <link rel="stylesheet" href="Lab4.Css">
+</head>
+<body>
+  <h1 id="main-heading">INST377 - Lab 4</h1>
+  
+  <div class="container">
+    <!-- alert block -->
+    <div class="section">
+      <form id="alert-form" onsubmit="showAlert(event)">
+        <div class="form-group">
+          <label for="nameInput">Name:</label>
+          <input type="text" id="nameInput" required />
+        </div>
+        <button type="submit">Alert Me</button>
+      </form>
+    </div>
+    
+    <!-- color changing bloock -->
+    <div class="section">
+      <button onclick="changeColor()">Change Color</button>
+    </div>
+    
+    <!-- text tesing block -->
+    <div class="section">
+      <form id="text-form" onsubmit="validateText(event)">
+        <div class="form-group">
+          <label for="textInput">Text Tester:</label>
+          <input type="text" id="textInput" />
+        </div>
+        <button type="submit">Validate Text</button>
+      </form>
+    </div>
+    
+    <!-- Add Text block -->
+    <div class="section">
+      <button onclick="addText()">Add Text</button>
+    </div>
+  </div>
+
+  <!-- Link to the external JavaScript file -->
+  <script src="Lab4.js"></script>
+</body>
+</html>
