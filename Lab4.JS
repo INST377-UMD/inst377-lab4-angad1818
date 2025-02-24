@@ -4,7 +4,7 @@ document.body.style.backgroundColor = currentColor;
 
 // Function for the "Alert Me" section
 function showAlert(event) {
-  event.preventDefault(); // Prevents the form from refreshing the page
+  event.preventDefault();
   const nameValue = document.getElementById('nameInput').value;
   alert(`Hi ${nameValue}!`);
 }
@@ -23,7 +23,7 @@ function changeColor() {
 
 // Function to validate that the text contains no special characters
 function validateText(event) {
-  event.preventDefault(); // Prevents the form from submitting
+  event.preventDefault();
   const validationRegex = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
   const textValue = document.getElementById('textInput').value;
   if (validationRegex.test(textValue)) {
